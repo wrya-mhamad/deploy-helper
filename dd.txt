@@ -1,0 +1,9 @@
+if not "%minimized%"=="" goto :minimized
+set minimized=true
+@echo off
+
+cd "C:\app path"
+
+start /min cmd /C "node app.js"
+goto :EOF
+:minimized
